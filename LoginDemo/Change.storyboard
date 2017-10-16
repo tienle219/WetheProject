@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Change Password View Controller-->
+        <scene sceneID="aVB-24-8pJ">
+            <objects>
+                <viewController storyboardIdentifier="changepassword" id="mmt-8j-Lyz" customClass="ChangePasswordViewController" customModule="LoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ost-KU-2Iy"/>
+                        <viewControllerLayoutGuide type="bottom" id="lwa-Sx-M4g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i3E-4m-Hh0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N4v-Fd-mBD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Change Password" id="Ey8-aH-40x">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="lYs-hs-q3J">
+                                            <connections>
+                                                <action selector="btnBack:" destination="mmt-8j-Lyz" id="Owm-E9-Unc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Old Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUV-zQ-aoV">
+                                <rect key="frame" x="30" y="120" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ocV-pV-n44"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="odJ-Xb-Tth">
+                                <rect key="frame" x="30" y="190" width="315" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gfS-tF-MVf">
+                                <rect key="frame" x="30" y="260" width="315" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsi-0I-xyd">
+                                <rect key="frame" x="30" y="330" width="210" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.94768983245790905" blue="0.28402272724487099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Change password"/>
+                                <connections>
+                                    <action selector="btnChangepassword:" destination="mmt-8j-Lyz" eventType="touchUpInside" id="ax8-yB-IfP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gfS-tF-MVf" firstAttribute="width" secondItem="odJ-Xb-Tth" secondAttribute="width" id="1a8-bg-VDq"/>
+                            <constraint firstItem="odJ-Xb-Tth" firstAttribute="centerX" secondItem="aUV-zQ-aoV" secondAttribute="centerX" id="4uH-ld-CTO"/>
+                            <constraint firstAttribute="trailing" secondItem="aUV-zQ-aoV" secondAttribute="trailing" constant="30" id="A2x-Kg-70q"/>
+                            <constraint firstItem="aUV-zQ-aoV" firstAttribute="centerX" secondItem="i3E-4m-Hh0" secondAttribute="centerX" id="ABd-om-O6J"/>
+                            <constraint firstItem="odJ-Xb-Tth" firstAttribute="height" secondItem="aUV-zQ-aoV" secondAttribute="height" id="Eia-uI-ooA"/>
+                            <constraint firstItem="aUV-zQ-aoV" firstAttribute="leading" secondItem="i3E-4m-Hh0" secondAttribute="leading" constant="30" id="Em6-cX-Vgk"/>
+                            <constraint firstItem="gfS-tF-MVf" firstAttribute="centerX" secondItem="odJ-Xb-Tth" secondAttribute="centerX" id="KN8-Gx-yWo"/>
+                            <constraint firstItem="wsi-0I-xyd" firstAttribute="top" secondItem="gfS-tF-MVf" secondAttribute="bottom" constant="30" id="VjG-fz-QUz"/>
+                            <constraint firstItem="aUV-zQ-aoV" firstAttribute="top" secondItem="ost-KU-2Iy" secondAttribute="bottom" constant="100" id="dBW-hY-Ykt"/>
+                            <constraint firstItem="gfS-tF-MVf" firstAttribute="top" secondItem="odJ-Xb-Tth" secondAttribute="bottom" constant="30" id="esO-7J-2Yp"/>
+                            <constraint firstItem="wsi-0I-xyd" firstAttribute="leading" secondItem="i3E-4m-Hh0" secondAttribute="leading" constant="30" id="g0m-n9-SFn"/>
+                            <constraint firstItem="gfS-tF-MVf" firstAttribute="height" secondItem="odJ-Xb-Tth" secondAttribute="height" id="oRN-f2-VrQ"/>
+                            <constraint firstItem="wsi-0I-xyd" firstAttribute="width" secondItem="gfS-tF-MVf" secondAttribute="width" multiplier="2/3" id="oti-71-nLy"/>
+                            <constraint firstItem="odJ-Xb-Tth" firstAttribute="top" secondItem="aUV-zQ-aoV" secondAttribute="bottom" constant="30" id="qtD-Kz-dlH"/>
+                            <constraint firstItem="odJ-Xb-Tth" firstAttribute="width" secondItem="aUV-zQ-aoV" secondAttribute="width" id="x4R-ke-csC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtConfirmpassword" destination="gfS-tF-MVf" id="fjm-2S-dpv"/>
+                        <outlet property="txtNewpasword" destination="odJ-Xb-Tth" id="GOC-jo-kiq"/>
+                        <outlet property="txtOldpassword" destination="aUV-zQ-aoV" id="81f-Tc-mSy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Van-4f-tH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="83"/>
+        </scene>
+        <!--Change Email View Controller-->
+        <scene sceneID="Rre-o1-PTV">
+            <objects>
+                <viewController storyboardIdentifier="changeemail" id="ixC-cv-gv4" customClass="ChangeEmailViewController" customModule="LoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sIb-gA-RjR"/>
+                        <viewControllerLayoutGuide type="bottom" id="aMl-pv-Whb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aw8-B8-i4X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRG-8t-6SK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Change Email" id="Qhy-Lw-sew">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="reply" id="Lml-Ct-4an">
+                                            <connections>
+                                                <action selector="btnBack:" destination="ixC-cv-gv4" id="0qo-OZ-W5h"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cep-aH-sxe">
+                                <rect key="frame" x="30" y="170" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pRU-bP-dgc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ly-Lc-Y4x">
+                                <rect key="frame" x="30" y="250" width="315" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.94768983250000005" blue="0.28402272719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Change Email"/>
+                                <connections>
+                                    <action selector="btnChangeEmail:" destination="ixC-cv-gv4" eventType="touchUpInside" id="9Da-WY-lAT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Ly-Lc-Y4x" firstAttribute="centerX" secondItem="cep-aH-sxe" secondAttribute="centerX" id="1Oa-e3-uRy"/>
+                            <constraint firstItem="1Ly-Lc-Y4x" firstAttribute="height" secondItem="cep-aH-sxe" secondAttribute="height" id="1RI-39-ord"/>
+                            <constraint firstAttribute="trailing" secondItem="SRG-8t-6SK" secondAttribute="trailing" id="2zf-he-HWf"/>
+                            <constraint firstItem="cep-aH-sxe" firstAttribute="centerX" secondItem="Aw8-B8-i4X" secondAttribute="centerX" id="8hj-d1-Zia"/>
+                            <constraint firstAttribute="trailing" secondItem="cep-aH-sxe" secondAttribute="trailing" constant="30" id="DzT-br-gQd"/>
+                            <constraint firstItem="SRG-8t-6SK" firstAttribute="top" secondItem="sIb-gA-RjR" secondAttribute="bottom" id="EFV-XJ-Rk2"/>
+                            <constraint firstItem="cep-aH-sxe" firstAttribute="leading" secondItem="Aw8-B8-i4X" secondAttribute="leading" constant="30" id="FNk-8e-tUe"/>
+                            <constraint firstItem="1Ly-Lc-Y4x" firstAttribute="top" secondItem="cep-aH-sxe" secondAttribute="bottom" constant="40" id="Iyd-bD-Zd3"/>
+                            <constraint firstItem="cep-aH-sxe" firstAttribute="top" secondItem="sIb-gA-RjR" secondAttribute="bottom" constant="150" id="SZW-cz-4hf"/>
+                            <constraint firstItem="SRG-8t-6SK" firstAttribute="leading" secondItem="Aw8-B8-i4X" secondAttribute="leading" id="bXf-Ws-YvB"/>
+                            <constraint firstItem="1Ly-Lc-Y4x" firstAttribute="width" secondItem="cep-aH-sxe" secondAttribute="width" id="f0D-2d-8wv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="cep-aH-sxe" id="ogq-0i-bG1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvm-Ey-9NQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="82"/>
+        </scene>
+    </scenes>
+</document>

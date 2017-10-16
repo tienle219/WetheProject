@@ -1,0 +1,21 @@
+PODS:
+  - DLRadioButton (1.4.9)
+  - PageMenu (2.0.0)
+  - Popover (1.0.6)
+  - Toaster (2.0.4)
+
+DEPENDENCIES:
+  - DLRadioButton (~> 1.4)
+  - PageMenu
+  - Popover
+  - Toaster
+
+SPEC CHECKSUMS:
+  DLRadioButton: 7bb8a6e3768b572469ace553391ab4d2af6f9c19
+  PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+  Popover: 227aa929a6cdf41c4828786be8ede109c40344c9
+  Toaster: f13031c636ef065281bc11857be9a16c7659e04f
+
+PODFILE CHECKSUM: a3f86903ec0f89d44c79afa23793e8ee06ed944f
+
+COCOAPODS: 1.2.1
